@@ -35,11 +35,11 @@ public class Feeder {
     public static DatabaseHandler db;
     
     public Feeder() {    	
-		try {
-			rb = ResourceBundle.getBundle("Feeder");
-			strings = ResourceBundle.getBundle("DebateControlSystemStrings");
-		} catch (MissingResourceException e) {
-		}
+	try {
+	    rb = ResourceBundle.getBundle("Feeder");
+	    strings = ResourceBundle.getBundle("DebateControlSystemStrings");
+	} catch (MissingResourceException e) {
+	}
     	new Notifier();
     	db = new DatabaseHandler(rb);
     }
